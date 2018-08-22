@@ -1,3 +1,7 @@
+/*
+  browser widths above 768px
+*/
+
 * {
     box-sizing: border-box;
    }
@@ -208,3 +212,77 @@ footer p{
     padding: 15px;
 
 }
+
+
+/*
+  These rules take effect when the browser's width is either 768px to 641px
+*/
+
+@media screen and (max-width: 768px) {
+    .main-about {
+        max-width: 700px;
+        margin: auto;
+        overflow: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .main-contact {
+        max-width: 700px;
+        overflow: auto;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+    .contact {
+        max-width: 300px;
+        max-height: 175px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .portfolio-items {
+        margin: 25px;
+     }
+}
+  
+/*
+  These rules take effect when the browser's width 640px and below
+*/
+
+@media screen and (max-width: 640px) {
+    header {
+        text-align: center;
+    }
+    .header {
+        display: block;
+    }
+
+    nav {
+        padding: 25px;
+    }
+
+    .main-about {
+       margin: 20px 10px 50px 10px;
+    }
+
+    .main-contact {
+        max-width: auto;
+        overflow: auto;
+        margin: 20px 10px 10px 10px;
+
+    }
+    .contact {
+        max-width: 300px;
+        max-height: 175px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-items {
+        display: block;
+        margin: 15px;
+    }
+
+
+}
+  
